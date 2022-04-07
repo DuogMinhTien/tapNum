@@ -12,6 +12,12 @@ var number = 0;
 
 var styleColor1 = ["#6C7EE1", "#92B9E3", "#FFC4A4", "#FBA2D0", "#C688EB"];
 
+window.scroll ({
+    top: $("section").offsetHeight,
+    left: 100,
+    behavior: 'smooth'
+});
+
 window.addEventListener ("click", () => {
     let spanEle = document.createElement ("span");
     spanEle.textContent = ++number;
